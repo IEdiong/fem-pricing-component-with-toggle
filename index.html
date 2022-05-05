@@ -9,9 +9,9 @@
 
     <title>Frontend Mentor | Pricing Component with toggle</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -25,7 +25,6 @@
     </style>
   </head>
   <body>
-  
     <!-- <div class="box"></div> -->
     <header class="sr-only">
       <h1>Pricing</h1>
@@ -34,8 +33,16 @@
       <div class="container">
         <h2>Our Pricing</h2>
         <div class="toggle">
-          Annually
-          Monthly
+          <fieldset class="billing-container">
+            <legend class="sr-only">Choose a billing frequency</legend>
+            <label for="annually">Annually</label>
+            <span class="switch">
+              <input type="radio" id="annually" name="billing"/>
+              <input type="radio" id="monthly" name="billing" checked aria-checked="true"/>
+              <span class="slider"></span>
+            </span>
+              <label for="monthly">Monthly</label>
+          </fieldset>
         </div>
         <div class="package-container">
           <!-- Basic Package -->
@@ -84,12 +91,9 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.frontendmentor.io/profile/iediong">Ediongsenyene Joseph</a>.
-      </div>
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/iediong">Ediongsenyene Joseph</a>.</div>
     </footer>
-  
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
