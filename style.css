@@ -21,8 +21,10 @@
 body {
   padding-top: 4.5em;
   position: relative;
-  background: url('./images/bg-top.svg') var(--vl-grayish-blue) no-repeat;
-  background-position: left 52vw top -4vh;
+  background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-color:  var(--vl-grayish-blue);
+  background-position: left 52vw top -4vh, left -24vw bottom -10vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.93rem;
   text-align: center;
@@ -68,7 +70,7 @@ body {
 
 .package {
   padding: 2em;
-  width: 100%;
+  width: min(100%, 480px);
   background-color: #fff;
   border-radius: 0.5em;
   color: var(--grayish-blue);
@@ -154,4 +156,19 @@ body {
 
 .footer {
   margin-top: 5em;
+}
+
+@media (min-width: 785px) {
+  body {
+    background-position: left 74vw top 0, left 0 bottom 0;
+  }
+}
+
+@media (min-width: 920px) {
+  .pricing {
+    & .package-container {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
 }
