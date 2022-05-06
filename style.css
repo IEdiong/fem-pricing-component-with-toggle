@@ -79,10 +79,20 @@ body {
     border: 0;
 
     & .switch {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       position: relative;
       width: 60px;
       height: 34px;
+    }
+
+    & input[type='radio'] {
+      height: 100%;
+      width: 20px;
+      z-index: 10;
+      opacity: 0;
+      cursor: pointer;
     }
 
     & .slider {
@@ -94,6 +104,8 @@ body {
       cursor: pointer;
       background: linear-gradient(90deg, var(--grad-start) 10%, var(--grad-end) 90%);
       border-radius: 20px;
+
+      /* visibility: hidden; */
     }
 
     & .slider::before {
@@ -105,9 +117,14 @@ body {
       top: 4px;
       background-color: #fff;
       border-radius: 50%;
+      transition: 0.5s ease;
+      transform: translateX(var(--left, 0));
     }
   }
 }
+
+
+/*  */
 
 .package {
   padding: 2em;
