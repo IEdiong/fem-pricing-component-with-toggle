@@ -31,11 +31,11 @@
     <main class="pricing">
       <div class="container">
         <h2>Our Pricing</h2>
-        <div class="toggle">
+        <div class="billing-toggle">
           <fieldset class="billing-container">
             <legend class="sr-only">Choose a billing frequency</legend>
             <label for="annually">Annually</label>
-            <span class="switch">
+            <span class="switch" tabindex="-1">
               <input type="radio" id="annually" name="billing"/>
               <input type="radio" id="monthly" name="billing" checked/>
               <span class="slider"></span>
@@ -49,7 +49,6 @@
             <h3 class="package__type">Basic</h3>
             <p class="package__price">
               &dollar;<span id="price-basic">19.99</span>
-              <!-- &dollar;199.99 -->
             </p>
             <ul class="package__feature">
               <li>500 GB Storage</li>
@@ -62,8 +61,7 @@
           <section class="package package--highlight">
             <h3 class="package__type">Professional</h3>
             <p class="package__price">
-              &dollar;<span id="price-basic">24.99</span>
-              <!-- &dollar;249.99 -->
+              &dollar;<span id="price-professional">24.99</span>
             </p>
             <ul class="package__feature">
               <li>1 TB Storage</li>
@@ -76,8 +74,7 @@
           <section class="package">
             <h3 class="package__type">Master</h3>
             <p class="package__price">
-              &dollar;<span id="price-basic">39.99</span>
-              <!-- &dollar;399.99 -->
+              &dollar;<span id="price-master">39.99</span>
             </p>
             <ul class="package__feature">
               <li>2 TB Storage</li>

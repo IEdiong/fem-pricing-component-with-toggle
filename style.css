@@ -54,7 +54,7 @@ body {
     color: var(--grayish-blue);
   }
 
-  & .toggle {
+  & .billing-toggle {
     margin-top: 2em;
     margin-bottom: 5em;
   }
@@ -68,7 +68,7 @@ body {
   }
 }
 
-.toggle {
+.billing-toggle {
   color: var(--l-grayish-blue);
   & > .billing-container {
     padding: 0;
@@ -85,6 +85,10 @@ body {
       position: relative;
       width: 60px;
       height: 34px;
+    }
+
+    & .switch:focus {
+      box-shadow: 0 0 1px #2196F3;
     }
 
     & input[type='radio'] {
