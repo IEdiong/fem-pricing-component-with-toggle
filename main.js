@@ -28,3 +28,9 @@ const toggleSwitch = function () {
 
 // Add an event listener to the slider
 switchEl.addEventListener('click', toggleSwitch);
+
+// listen for space bar press
+// window.addEventListener('keydown', (e) => 
+// {
+//   if (e.key === ' ') toggleSwitch();
+// })
