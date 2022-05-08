@@ -36,9 +36,9 @@
             <legend class="sr-only">Choose a billing frequency</legend>
             <label for="annually">Annually</label>
             <span class="switch" tabindex="0">
-              <input type="radio" id="annually" name="billing"/>
-              <input type="radio" id="monthly" name="billing" checked/>
-              <span class="slider"></span>
+              <input type="checkbox" id="annually" role="switch"/>
+              <!-- <input type="radio" id="monthly" name="billing" checked/> -->
+              <span class="slider" aria-hidden="true"></span>
             </span>
               <label for="monthly">Monthly</label>
           </fieldset>

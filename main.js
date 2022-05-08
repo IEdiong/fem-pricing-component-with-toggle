@@ -12,24 +12,23 @@ const annualInput = document.getElementById('annually');
 let isMonthly = true;
 
 const toggleSwitch = function () {
-  // const annualInput = document.getElementById('annually');
   const slider = document.querySelector('.slider');
   if (annualInput.checked) {
     // slider.style.setProperty('--left', '-26px');
     slider.classList.toggle('active');
     
     // Update price in the UI
-    basicPrice.textContent = 199.99;
-    proPrice.textContent = 249.99;
-    masterPrice.textContent = 399.99;
+    basicPrice.textContent = '199.99';
+    proPrice.textContent = '249.99';
+    masterPrice.textContent = '399.99';
   } else {
     // slider.style.setProperty('--left', '0');
     slider.classList.toggle('active');
 
     // Update price in the UI
-    basicPrice.textContent = 19.99;
-    proPrice.textContent = 24.99;
-    masterPrice.textContent = 39.99;
+    basicPrice.textContent = '19.99';
+    proPrice.textContent = '24.99';
+    masterPrice.textContent = '39.99';
   }
 };
 
