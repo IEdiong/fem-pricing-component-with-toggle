@@ -40,6 +40,7 @@ window.addEventListener('keydown', (e) => {
   console.log(e);
   if (e.key === 'Enter') {
     annualInput.checked = annualInput.checked ? !isMonthly : isMonthly;
+    annualInput.setAttribute('aria-checked', annualInput.checked);
 
     toggleSwitch();
   }
